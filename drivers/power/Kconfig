@@ -444,6 +444,16 @@ config CHARGER_BQ25890
 	help
 	  Say Y to enable support for the TI BQ25890 battery charger.
 
+config E3XX_PMU
+	tristate "NI Ettus Research USRP E3x0 PMU support."
+	default n
+	help
+	  Say Y here to enable support for the NI Ettus Research
+	  USRP E3xx Power Management Unit (PMU)
+
+	  To compile this driver as a module, chose M here: the
+	  module will be called e3xx-pmu.
+
 config CHARGER_SMB347
 	tristate "Summit Microelectronics SMB347 Battery Charger"
 	depends on I2C
