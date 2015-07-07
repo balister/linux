@@ -239,6 +239,13 @@ config REGULATOR_DB8500_PRCMU
 	  This driver supports the voltage domain regulators controlled by the
 	  DB8500 PRCMU
 
+config REGULATOR_E3XX_DB
+	tristate "NI Ettus Research E3XX Daughterboard Regulator."
+	depends on OF
+	help
+	  This driver supports the voltage regulators for the NI Ettus Research E3XX
+	  daughterboards.
+
 config REGULATOR_FAN53555
 	tristate "Fairchild FAN53555 Regulator"
 	depends on I2C
